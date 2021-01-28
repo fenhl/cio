@@ -44,7 +44,7 @@ opentelemetry-zipkin = { version = "^0.8", features = ["reqwest-client"], defaul
 pandoc = "0.8"
 phonenumber = "0.2"
 regex = "1"
-reqwest = { version = "0.10", features = ["json"] }
+reqwest = { version = "0.11", features = ["json"] }
 revai = { version = "0.1.0" }
 schemars = { version = "0.8", features = ["chrono", "uuid"] }
 sendgrid-api = "^0.1.0"
@@ -58,7 +58,7 @@ slack-chat-api = "^0.1.4"
 #slack-chat-api = { path = "../slack" }
 tailscale-api = "^0.1.0"
 #tailscale-api = { path = "../tailscale" }
-tokio = { version = "0.2", features = ["macros", "rt-threaded"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 toml = "0.5"
 tracing = "^0.1"
 tracing-attributes = "^0.1"

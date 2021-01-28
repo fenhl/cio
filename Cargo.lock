@@ -115,7 +115,7 @@ name = "airtable-api"
 version = "0.1.20"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "schemars",
  "serde",
  "serde_json",
@@ -128,7 +128,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "57b6e14a60374298d39f22571b5a105a300958e3144d176edf02da9a8e58fe86"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "schemars",
  "serde",
  "serde_json",
@@ -215,7 +215,7 @@ dependencies = [
  "futures-lite",
  "num_cpus",
  "once_cell",
- "tokio",
+ "tokio 0.2.24",
 ]
 
 [[package]]
@@ -281,6 +281,27 @@ dependencies = [
  "pin-utils",
  "slab",
  "wasm-bindgen-futures",
+]
+
+[[package]]
+name = "async-stream"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3670df70cbc01729f901f94c887814b3c68db038aad1329a418bae178bc5295c"
+dependencies = [
+ "async-stream-impl",
+ "futures-core",
+]
+
+[[package]]
+name = "async-stream-impl"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a3548b8efc9f8e8a5a0a2808c5bd8451a9031b9e5b879a79590304ae928b0a70"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]
@@ -581,7 +602,7 @@ dependencies = [
  "handlebars",
  "html2text",
  "hubcaps",
- "hyper",
+ "hyper 0.13.9",
  "macros 0.1.0",
  "nom_pem",
  "openapiv3",
@@ -591,7 +612,7 @@ dependencies = [
  "pandoc",
  "phonenumber",
  "regex",
- "reqwest",
+ "reqwest 0.11.0",
  "revai 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "sendgrid-api 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -602,7 +623,7 @@ dependencies = [
  "shippo 0.1.19 (registry+https://github.com/rust-lang/crates.io-index)",
  "slack-chat-api 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "tailscale-api 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "tokio",
+ "tokio 1.1.0",
  "toml",
  "tracing",
  "tracing-attributes",
@@ -638,7 +659,7 @@ dependencies = [
  "handlebars",
  "html2text",
  "hubcaps",
- "hyper",
+ "hyper 0.13.9",
  "macros 0.1.0 (git+https://github.com/oxidecomputer/cio)",
  "nom_pem",
  "openapiv3",
@@ -648,7 +669,7 @@ dependencies = [
  "pandoc",
  "phonenumber",
  "regex",
- "reqwest",
+ "reqwest 0.10.10",
  "revai 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "schemars",
  "sendgrid-api 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -659,7 +680,7 @@ dependencies = [
  "shippo 0.1.19 (registry+https://github.com/rust-lang/crates.io-index)",
  "slack-chat-api 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "tailscale-api 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "tokio",
+ "tokio 0.2.24",
  "toml",
  "tracing",
  "tracing-attributes",
@@ -706,7 +727,7 @@ dependencies = [
  "failure",
  "http",
  "percent-encoding 1.0.1",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "serde_json",
  "serde_qs 0.4.6",
@@ -1073,7 +1094,7 @@ dependencies = [
  "futures",
  "hostname",
  "http",
- "hyper",
+ "hyper 0.13.9",
  "indexmap",
  "openapiv3",
  "paste",
@@ -1087,7 +1108,7 @@ dependencies = [
  "slog-bunyan",
  "slog-json",
  "slog-term",
- "tokio",
+ "tokio 0.2.24",
  "toml",
  "urlencoding",
  "uuid",
@@ -1432,7 +1453,7 @@ checksum = "f6503fe142514ca4799d4c26297c4248239fe8838d827db6bd6065c6ed29a6ce"
 name = "giphy-api"
 version = "0.1.4"
 dependencies = [
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
 ]
 
@@ -1453,8 +1474,8 @@ dependencies = [
 name = "google-drive"
 version = "0.1.12"
 dependencies = [
- "bytes 0.5.6",
- "reqwest",
+ "bytes 1.0.1",
+ "reqwest 0.11.0",
  "serde",
  "yup-oauth2",
 ]
@@ -1466,7 +1487,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c913fdff6be92427d4b9dfe46789c8cefb00cbee6086bd0803d4cb32e4747335"
 dependencies = [
  "bytes 0.5.6",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "yup-oauth2",
 ]
@@ -1475,7 +1496,7 @@ dependencies = [
 name = "google-geocode"
 version = "0.1.2"
 dependencies = [
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
 ]
@@ -1486,7 +1507,7 @@ version = "0.1.10"
 dependencies = [
  "chrono",
  "rand 0.7.3",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
  "yup-oauth2",
@@ -1500,7 +1521,7 @@ checksum = "f4fd88f4275fa9518e4042c38e63144ffef76918d5b3ce18e4b51a61a79bf750"
 dependencies = [
  "chrono",
  "rand 0.7.3",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "serde_json",
  "yup-oauth2",
@@ -1511,7 +1532,7 @@ name = "gusto-api"
 version = "0.1.1"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
 ]
@@ -1523,7 +1544,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "84134cea0c08f4a104d6f0d70bf0504d7d46a5658bfc05db0070d26f58f2242b"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "serde_json",
 ]
@@ -1542,8 +1563,28 @@ dependencies = [
  "http",
  "indexmap",
  "slab",
- "tokio",
- "tokio-util",
+ "tokio 0.2.24",
+ "tokio-util 0.3.1",
+ "tracing",
+ "tracing-futures",
+]
+
+[[package]]
+name = "h2"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b67e66362108efccd8ac053abafc8b7a8d86a37e6e48fc4f6f7485eb5e9e6a5"
+dependencies = [
+ "bytes 1.0.1",
+ "fnv",
+ "futures-core",
+ "futures-sink",
+ "futures-util",
+ "http",
+ "indexmap",
+ "slab",
+ "tokio 1.1.0",
+ "tokio-util 0.6.2",
  "tracing",
  "tracing-futures",
 ]
@@ -1655,6 +1696,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "http-body"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2861bd27ee074e5ee891e8b539837a9430012e249d7f0ca2d795650f579c1994"
+dependencies = [
+ "bytes 1.0.1",
+ "http",
+]
+
+[[package]]
 name = "http-client"
 version = "6.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1663,8 +1714,8 @@ dependencies = [
  "async-trait",
  "futures-util",
  "http-types",
- "hyper",
- "hyper-tls",
+ "hyper 0.13.9",
+ "hyper-tls 0.4.3",
  "log 0.4.13",
 ]
 
@@ -1719,7 +1770,7 @@ dependencies = [
  "log 0.4.13",
  "mime",
  "percent-encoding 2.1.0",
- "reqwest",
+ "reqwest 0.10.10",
  "schemars",
  "serde",
  "serde_derive",
@@ -1737,15 +1788,39 @@ dependencies = [
  "futures-channel",
  "futures-core",
  "futures-util",
- "h2",
+ "h2 0.2.7",
  "http",
- "http-body",
+ "http-body 0.3.1",
  "httparse",
  "httpdate",
  "itoa",
  "pin-project 1.0.4",
  "socket2",
- "tokio",
+ "tokio 0.2.24",
+ "tower-service",
+ "tracing",
+ "want",
+]
+
+[[package]]
+name = "hyper"
+version = "0.14.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12219dc884514cb4a6a03737f4413c0e01c23a1b059b0156004b23f1e19dccbe"
+dependencies = [
+ "bytes 1.0.1",
+ "futures-channel",
+ "futures-core",
+ "futures-util",
+ "h2 0.3.0",
+ "http",
+ "http-body 0.4.0",
+ "httparse",
+ "httpdate",
+ "itoa",
+ "pin-project 1.0.4",
+ "socket2",
+ "tokio 1.1.0",
  "tower-service",
  "tracing",
  "want",
@@ -1760,11 +1835,11 @@ dependencies = [
  "bytes 0.5.6",
  "ct-logs",
  "futures-util",
- "hyper",
+ "hyper 0.13.9",
  "log 0.4.13",
  "rustls 0.17.0",
  "rustls-native-certs",
- "tokio",
+ "tokio 0.2.24",
  "tokio-rustls",
  "webpki",
 ]
@@ -1776,10 +1851,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d979acc56dcb5b8dddba3917601745e877576475aa046df3226eabdecef78eed"
 dependencies = [
  "bytes 0.5.6",
- "hyper",
+ "hyper 0.13.9",
  "native-tls",
- "tokio",
+ "tokio 0.2.24",
  "tokio-tls",
+]
+
+[[package]]
+name = "hyper-tls"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d6183ddfa99b85da61a140bea0efc93fdf56ceaa041b37d553518030827f9905"
+dependencies = [
+ "bytes 1.0.1",
+ "hyper 0.14.2",
+ "native-tls",
+ "tokio 1.1.0",
+ "tokio-native-tls",
 ]
 
 [[package]]
@@ -2188,13 +2276,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "mio"
+version = "0.7.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e50ae3f04d169fcc9bde0b547d1c205219b7157e07ded9c5aff03e0637cb3ed7"
+dependencies = [
+ "libc",
+ "log 0.4.13",
+ "miow 0.3.6",
+ "ntapi",
+ "winapi 0.3.9",
+]
+
+[[package]]
 name = "mio-named-pipes"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0840c1c50fd55e521b247f949c241c9997709f23bd7f023b9762cd561e935656"
 dependencies = [
  "log 0.4.13",
- "mio",
+ "mio 0.6.23",
  "miow 0.3.6",
  "winapi 0.3.9",
 ]
@@ -2207,7 +2308,7 @@ checksum = "afcb699eb26d4332647cc848492bbc15eafb26f08d0304550d5aa1f612e066f0"
 dependencies = [
  "iovec",
  "libc",
- "mio",
+ "mio 0.6.23",
 ]
 
 [[package]]
@@ -2305,6 +2406,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "46345232a84add363a2b3bf214777cf13443f6dab781161aafbdadb8b1f0bd2d"
 dependencies = [
  "nom 4.2.3",
+]
+
+[[package]]
+name = "ntapi"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f6bb902e437b6d86e03cce10a7e2af662292c5dfef23b65899ea3ac9354ad44"
+dependencies = [
+ "winapi 0.3.9",
 ]
 
 [[package]]
@@ -2436,8 +2546,8 @@ dependencies = [
  "pin-project 0.4.27",
  "rand 0.7.3",
  "regex",
- "reqwest",
- "tokio",
+ "reqwest 0.10.10",
+ "tokio 0.2.24",
 ]
 
 [[package]]
@@ -2450,7 +2560,7 @@ dependencies = [
  "http",
  "lazy_static",
  "opentelemetry",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "serde_json",
  "typed-builder",
@@ -2743,8 +2853,8 @@ dependencies = [
  "http",
  "opentelemetry",
  "opentelemetry-zipkin",
- "reqwest",
- "tokio",
+ "reqwest 0.11.0",
+ "tokio 1.1.0",
  "tracing",
  "tracing-attributes",
  "tracing-futures",
@@ -3018,9 +3128,9 @@ dependencies = [
  "futures-core",
  "futures-util",
  "http",
- "http-body",
- "hyper",
- "hyper-tls",
+ "http-body 0.3.1",
+ "hyper 0.13.9",
+ "hyper-tls 0.4.3",
  "ipnet",
  "js-sys",
  "lazy_static",
@@ -3033,8 +3143,44 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded 0.7.0",
- "tokio",
+ "tokio 0.2.24",
  "tokio-tls",
+ "url",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+ "web-sys",
+ "winreg",
+]
+
+[[package]]
+name = "reqwest"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fd281b1030aa675fb90aa994d07187645bb3c8fc756ca766e7c3070b439de9de"
+dependencies = [
+ "base64 0.13.0",
+ "bytes 1.0.1",
+ "encoding_rs",
+ "futures-core",
+ "futures-util",
+ "http",
+ "http-body 0.4.0",
+ "hyper 0.14.2",
+ "hyper-tls 0.5.0",
+ "ipnet",
+ "js-sys",
+ "lazy_static",
+ "log 0.4.13",
+ "mime",
+ "mime_guess",
+ "native-tls",
+ "percent-encoding 2.1.0",
+ "pin-project-lite 0.2.4",
+ "serde",
+ "serde_json",
+ "serde_urlencoded 0.7.0",
+ "tokio 1.1.0",
+ "tokio-native-tls",
  "url",
  "wasm-bindgen",
  "wasm-bindgen-futures",
@@ -3046,9 +3192,9 @@ dependencies = [
 name = "revai"
 version = "0.1.0"
 dependencies = [
- "bytes 0.5.6",
+ "bytes 1.0.1",
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
 ]
@@ -3061,7 +3207,7 @@ checksum = "0682292b91f084e376c51e0fc81752a8519c9714b05741b7a97b5e1d288ae3fd"
 dependencies = [
  "bytes 0.5.6",
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "serde_json",
 ]
@@ -3291,7 +3437,7 @@ name = "sendgrid-api"
 version = "0.1.3"
 dependencies = [
  "data-encoding",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
 ]
 
@@ -3303,7 +3449,7 @@ checksum = "30ad56d42e5c763f315d5a8206cca9cf66b880cdd5345fc4877f62429088a139"
 dependencies = [
  "chrono",
  "data-encoding",
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
 ]
 
@@ -3314,7 +3460,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "933beb0343c84eefd69a368318e9291b179e09e51982d49c65d7b362b0e9466f"
 dependencies = [
  "httpdate",
- "reqwest",
+ "reqwest 0.10.10",
  "sentry-backtrace",
  "sentry-contexts",
  "sentry-core",
@@ -3566,7 +3712,7 @@ dependencies = [
 name = "sheets"
 version = "0.1.6"
 dependencies = [
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "yup-oauth2",
 ]
@@ -3577,7 +3723,7 @@ version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "43cae652c06e31b3c38685c6e8da4199ab593f25bdab94a23793dc69388c66d4"
 dependencies = [
- "reqwest",
+ "reqwest 0.10.10",
  "serde",
  "yup-oauth2",
 ]
@@ -3593,7 +3739,7 @@ name = "shippo"
 version = "0.1.19"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "schemars",
  "serde",
  "serde_json",
@@ -3606,7 +3752,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d291f3579fcfca160678d13f734487b8618de665b51eb0b93c1e9d38fc94d2b2"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "schemars",
  "serde",
  "serde_json",
@@ -3659,7 +3805,7 @@ name = "slack-chat-api"
 version = "0.1.4"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
 ]
@@ -3671,7 +3817,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a92047e76aaad43b3d01afe958c65cc2ddd5457c1c7cbffdb496d83d5e1a7957"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "schemars",
  "serde",
  "serde_json",
@@ -3963,7 +4109,7 @@ name = "tailscale-api"
 version = "0.1.0"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
  "serde_json",
 ]
@@ -3975,7 +4121,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1015cae3287483248a0a2263a3d801694ff55eb71e37bcf87567633bfa6f1c30"
 dependencies = [
  "chrono",
- "reqwest",
+ "reqwest 0.10.10",
  "schemars",
  "serde",
  "serde_json",
@@ -4136,15 +4282,31 @@ dependencies = [
  "lazy_static",
  "libc",
  "memchr",
- "mio",
+ "mio 0.6.23",
  "mio-named-pipes",
  "mio-uds",
  "num_cpus",
  "pin-project-lite 0.1.11",
  "signal-hook-registry",
  "slab",
- "tokio-macros",
+ "tokio-macros 0.2.6",
  "winapi 0.3.9",
+]
+
+[[package]]
+name = "tokio"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8efab2086f17abcddb8f756117665c958feee6b2e39974c2f1600592ab3a4195"
+dependencies = [
+ "autocfg",
+ "bytes 1.0.1",
+ "libc",
+ "memchr",
+ "mio 0.7.7",
+ "num_cpus",
+ "pin-project-lite 0.2.4",
+ "tokio-macros 1.0.0",
 ]
 
 [[package]]
@@ -4159,6 +4321,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "tokio-macros"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42517d2975ca3114b22a16192634e8241dc5cc1f130be194645970cc1c371494"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "tokio-native-tls"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7d995660bd2b7f8c1568414c1126076c13fbb725c40112dc0120b78eb9b717b"
+dependencies = [
+ "native-tls",
+ "tokio 1.1.0",
+]
+
+[[package]]
 name = "tokio-rustls"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4166,8 +4349,19 @@ checksum = "15cb62a0d2770787abc96e99c1cd98fcf17f94959f3af63ca85bdfb203f051b4"
 dependencies = [
  "futures-core",
  "rustls 0.17.0",
- "tokio",
+ "tokio 0.2.24",
  "webpki",
+]
+
+[[package]]
+name = "tokio-stream"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "76066865172052eb8796c686f0b441a93df8b08d40a950b062ffb9a426f00edd"
+dependencies = [
+ "futures-core",
+ "pin-project-lite 0.2.4",
+ "tokio 1.1.0",
 ]
 
 [[package]]
@@ -4177,7 +4371,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9a70f4fcd7b3b24fb194f837560168208f669ca8cb70d0c4b862944452396343"
 dependencies = [
  "native-tls",
- "tokio",
+ "tokio 0.2.24",
 ]
 
 [[package]]
@@ -4191,7 +4385,23 @@ dependencies = [
  "futures-sink",
  "log 0.4.13",
  "pin-project-lite 0.1.11",
- "tokio",
+ "tokio 0.2.24",
+]
+
+[[package]]
+name = "tokio-util"
+version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "feb971a26599ffd28066d387f109746df178eff14d5ea1e235015c5601967a4b"
+dependencies = [
+ "async-stream",
+ "bytes 1.0.1",
+ "futures-core",
+ "futures-sink",
+ "log 0.4.13",
+ "pin-project-lite 0.2.4",
+ "tokio 1.1.0",
+ "tokio-stream",
 ]
 
 [[package]]
@@ -4659,7 +4869,7 @@ dependencies = [
  "serde_json",
  "sheets 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "shippo 0.1.19 (registry+https://github.com/rust-lang/crates.io-index)",
- "tokio",
+ "tokio 1.1.0",
  "tracing",
  "tracing-attributes",
  "tracing-futures",
@@ -4791,7 +5001,7 @@ dependencies = [
  "chrono",
  "futures",
  "http",
- "hyper",
+ "hyper 0.13.9",
  "hyper-rustls",
  "log 0.4.13",
  "percent-encoding 2.1.0",
@@ -4799,7 +5009,7 @@ dependencies = [
  "seahash",
  "serde",
  "serde_json",
- "tokio",
+ "tokio 0.2.24",
  "url",
 ]
 
@@ -4824,6 +5034,6 @@ dependencies = [
  "chrono",
  "cio-api 0.2.0",
  "jsonwebtoken",
- "reqwest",
+ "reqwest 0.11.0",
  "serde",
 ]
